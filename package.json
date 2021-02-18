@@ -1,0 +1,30 @@
+{
+  "name": "@josundt/htmlhint-config",
+  "version": "1.0.0",
+  "description": "Ruleset for HTML code style and linting",
+  "main": ".htmlhintrc",
+  "scripts": {
+    "lint": "echo \"No linting for this project\"",
+    "build": "echo \"No build for this project\"",
+    "test": "echo \"No tests for this project\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josundt/josundt-htmlhint-config.git"
+  },
+  "keywords": [
+    "htmlhint",
+    ".htmlhintrc"
+  ],
+  "license": "ISC",
+  "files": [
+    ".htmlhintrc"
+  ],
+  "author": {
+    "name": "Jørn Andre Sundt",
+    "email": "jorn.andre.sundt@jasmin.no"
+  },
+  "dependencies": {
+    "htmlhint": "0.14.2"
+  }
+}
