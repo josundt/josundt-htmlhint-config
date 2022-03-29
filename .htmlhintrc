@@ -1,25 +1,41 @@
 {
-    "alt-require": false,
-    "attr-lowercase": false, // switched off because of certain svg elements
-    "attr-no-duplication": true,
-    "attr-unsafe-chars": true,
-    "attr-value-double-quotes": true,
-    "attr-value-not-empty": false,
-    "doctype-first": false,
-    "doctype-html5": false,
-    "empty-tag-not-self-closed": true,
-    "head-script-disabled": true,
-    "href-abs-or-rel": false,
-    "id-class-ad-disabled": true,
-    // "id-class-value": "hump",
-    "id-unique": true,
-    "inline-script-disabled": true,
-    "inline-style-disabled": false,
-    "space-tab-mixed-disabled": "space",
-    "spec-char-escape": false,
-    "src-not-empty": true,
-    "style-disabled": false,
-    "tag-pair": true,
-    "tagname-lowercase": true,
-    "title-require": false
-  }
+  // DOCTYPE AND HEAD
+  "doctype-first": false, // Doctype must be declared first.
+  "doctype-html5": false, // Invalid doctype.
+  "html-lang-require": false, // The HTML lang attribute is required.
+  "head-script-disabled": false, // The <script> tag cannot be used in a tag.
+  "style-disabled": false, // <style> tags cannot be used.
+  "script-disabled": false, // <script> tags cannot be used.
+  "title-require": false, // <title> must be present in <head> tag.
+  // ATTRIBUTES
+  "attr-lowercase": false, // All attribute names must be in lowercase. - NB! Switched off because of certain SVG elements
+  "attr-no-duplication": true, // Elements cannot have duplicate attributes.
+  "attr-no-unnecessary-whitespace": true, // No spaces between attribute names and values.
+  "attr-unsafe-chars": true, // Attribute values cannot contain unsafe chars.
+  "attr-value-double-quotes": true, // Attribute values must be in double quotes.
+  "attr-value-single-quotes": false, // Attribute values must be in single quotes.
+  "attr-value-not-empty": false, // All attributes must have values.
+  "attr-sorted": false, // No leading or trailing spaces in attribute values.
+  "attr-whitespace": false, // No leading or trailing spaces in attribute values.
+  "alt-require": false, // The alt attribute of an element must be present and alt attribute of area[href] and input[type=image] must have a value.
+  "input-requires-label": false, // All [ input ] tags must have a corresponding [ label ] tag.
+  // TAGS
+  "tags-check": false, // Allowing specify rules for any tag and validate that
+  "tag-pair": true, // Tag must be paired.
+  "tag-self-close": true, // Empty tags must be self closed.
+  "tagname-lowercase": true, // All html element names must be in lowercase.
+  "tagname-specialchars": true, // Tag names can only contain letters, numbers, "-", ":" or "_".
+  "empty-tag-not-self-closed": false, // The empty tag should not be closed by self.
+  "src-not-empty": true, // The src attribute of an img(script,link) must have a value.
+  "href-abs-or-rel": false, // An href attribute must be either absolute or relative.
+  // ID
+  "id-class-ad-disabled": true, // The id and class attributes cannot use the ad keyword, it will be blocked by adblock software.
+  "id-class-value": false, // ["underline"|"dash"|"hump"|false] - The id and class attribute values must meet the specified rules.
+  "id-unique": true, // The value of id attributes must be unique.
+  // INLINE
+  "inline-script-disabled": true, // Inline script cannot be use.
+  "inline-style-disabled": false, // Inline style cannot be use.
+  // FORMATTING
+  "space-tab-mixed-disabled": "space", // Do not mix tabs and spaces for indentation.
+  "spec-char-escape": false // Special characters must be escaped.
+}
