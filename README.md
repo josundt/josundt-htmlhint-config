@@ -16,8 +16,18 @@
 
 3. When using Visual Studio Code:  
 
-    __a)__ Install the htmllint extension (_"mkaufman.htmlhint"_), and add it
-       to the recommmended extensions for the workspace (_".vscode/extensions.json"_).
+    __a)__ Install the htmllint extension (_"htmlhint.vscode-htmlhint"_), and add it
+       to the VSCode recommmended extensions for the workspace (_".vscode/extensions.json"_).  
+       Then make sure the following two propeties are added to VSCode workspace settings 
+       (_".vscode/settings.json"_):
+    ```json
+    {
+      // ...
+      "htmlhint.documentSelector": ["html", "ejs"],
+      "htmlhint.configFile": "./node_modules/@josundt/htmlhint-config/.htmlhintrc",
+      // ...
+    }
+    ``` 
 
     __b)__ Add a task in _".vscode/tasks.json"_ to run sass-lint as a VSCode task for the
        whole workspace:
