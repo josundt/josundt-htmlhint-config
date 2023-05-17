@@ -1,6 +1,6 @@
 {
   "name": "@josundt/htmlhint-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Ruleset for HTML code style and linting",
   "main": ".htmlhintrc",
   "scripts": {
